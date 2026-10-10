@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore destinations, cultural sites, hiking trails and pony trekking in Lesotho with Molieleng Travel and Tours.">
+<title>Destinations | Molieleng Travel & Tours</title>
+
+<style type="text/css">
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: ghostwhite;
+    color: darkslategray;
+    line-height: 1.6;
+}
+
+header {
+    background-color: midnightblue;
+    color: white;
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    width: 65px;
+    height: auto;
+}
+
+header h2 {
+    color: wheat;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+nav a:hover,
+nav .active {
+    color: gold;
+}
+
+.button {
+    display: inline-block;
+    background-color: teal;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: midnightblue;
+}
+
+.altitude {
+    background-color: goldenrod;
+    color: midnightblue;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero {
+    background-color: midnightblue;
+    color: white;
+    padding: 60px 20px;
+}
+
+.breadcrumb {
+    color: wheat;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 700px;
+}
+
+.section {
+    padding: 45px 20px;
+}
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: white;
+    color: midnightblue;
+    border: 1px solid teal;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: teal;
+    color: white;
+}
+
+.destination-list {
+    display: grid;
+    gap: 25px;
+}
+
+.destination-row {
+    display: grid;
+    grid-template-columns: 250px 1fr auto;
+    gap: 22px;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px lightgray;
+}
+
+.destination-row img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.destination-row h3 {
+    font-family: Georgia, serif;
+    color: midnightblue;
+    margin: 8px 0;
+    font-size: 23px;
+}
+
+.destination-row p {
+    margin-top: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: lemonchiffon;
+    color: midnightblue;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.row-meta {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.row-action {
+    align-self: center;
+}
+
+.info-block {
+    margin-top: 45px;
+}
+
+.info-block h2,
+.section h2 {
+    font-family: Georgia, serif;
+    color: midnightblue;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trip-grid article {
+    background-color: white;
+    padding: 22px;
+    border-radius: 8px;
+    border-top: 5px solid teal;
+    box-shadow: 0 3px 10px lightgray;
+}
+
+.trip-grid h3 {
+    font-family: Georgia, serif;
+    color: midnightblue;
+}
+
+.notice {
+    background-color: aliceblue;
+    border-left: 5px solid goldenrod;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.cta {
+    background-color: teal;
+    color: white;
+    padding: 35px 20px;
+}
+
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cta h2 {
+    color: white;
+    font-family: Georgia, serif;
+    margin-top: 0;
+}
+
+.cta .button {
+    background-color: midnightblue;
+    white-space: nowrap;
+}
+
+footer {
+    background-color: midnightblue;
+    color: white;
+    padding: 35px 20px 15px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-logo {
+    width: 75px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: wheat;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-links a:hover {
+    color: gold;
+}
+
+.copyright {
+    border-top: 1px solid slategray;
+    margin-top: 25px;
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .destination-row {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .row-action {
+        grid-column: 2;
+    }
+
+    .trip-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 6px;
+    }
+
+    .destination-row {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-row img {
+        height: 220px;
+    }
+
+    .row-action {
+        grid-column: auto;
+    }
+
+    .trip-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <a href="index.html">
+            <img src="images/logo.svg" alt="Molieleng Travel and Tours" class="logo">
+        </a>
+
+        <h2>Molieleng Travel & Tours</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html" class="active">Destinations</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html#enquiry" class="button">Plan a trip</a>
+        </nav>
+    </div>
+</header>
+
+<div class="altitude">
+    EVERYWHERE HERE IS UPHILL
+</div>
+
+<main>
+
+<section class="hero">
+    <div class="container">
+        <p class="breadcrumb">Molieleng / Destinations</p>
+        <h1>Every metre has<br>a story.</h1>
+        <p>Explore places by the kind of day you want: culture, hiking, pony trekking or a long mountain road. Heights are approximate and refer to commonly reported area elevations, not guaranteed exact stops.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All trips</button>
+            <button class="filter-btn" data-filter="culture">Culture</button>
+            <button class="filter-btn" data-filter="hiking">Hiking</button>
+            <button class="filter-btn" data-filter="pony">Pony trekking</button>
+            <button class="filter-btn" data-filter="scenic">Scenic drive</button>
+        </div>
+
+        <div class="destination-list">
+
+            <article class="destination-row" data-category="culture">
+                <img src="images/ha-kome.jpg" alt="Ha Kome cave houses">
+
+                <div>
+                    <span class="tag">Culture</span>
+                    <h3>Ha Kome Cave Houses</h3>
+                    <p>Explore sandstone cave homes and learn about the people and history connected to the site.</p>
+
+                    <div class="row-meta">
+                        <span class="tag">Approx. 1,800 m</span>
+                        <span class="tag">Half day</span>
+                        <span class="tag">Easy to moderate</span>
+                    </div>
+                </div>
+
+                <div class="row-action">
+                    <a class="button" href="ha-kome.html">View trip</a>
+                </div>
+            </article>
+
+            <article class="destination-row" data-category="culture hiking">
+                <img src="images/basotho-culture.jpg" alt="Basotho heritage">
+
+                <div>
+                    <span class="tag">Culture</span>
+                    <h3>Thaba-Bosiu</h3>
+                    <p>Spend time at a landmark connected with the history of the Basotho nation.</p>
+
+                    <div class="row-meta">
+                        <span class="tag">Approx. 1,800 m</span>
+                        <span class="tag">Half day</span>
+                        <span class="tag">Easy to moderate</span>
+                    </div>
+                </div>
+
+                <div class="row-action">
+                    <a class="button" href="thaba-bosiu.html">View trip</a>
+                </div>
+            </article>
+
+            <article class="destination-row" data-category="hiking scenic">
+                <img src="images/mountain-trail.jpg" alt="Highland walking trail">
+
+                <div>
+                    <span class="tag">Hiking</span>
+                    <h3>Highland Trails</h3>
+                    <p>Walk open ridges and highland paths with a plan that respects weather and fitness.</p>
+
+                    <div class="row-meta">
+                        <span class="tag">3,000 m+ in high areas</span>
+                        <span class="tag">Half or full day</span>
+                        <span class="tag">Moderate to demanding</span>
+                    </div>
+                </div>
+
+                <div class="row-action">
+                    <a class="button" href="highland-trails.html">View trip</a>
+                </div>
+            </article>
+
+            <article class="destination-row" data-category="pony scenic">
+                <img src="images/pony-trekking.jpg" alt="Pony trekking in the mountains">
+
+                <div>
+                    <span class="tag">Pony trekking</span>
+                    <h3>Highland Pony Experience</h3>
+                    <p>Arrange a guided ride through suitable terrain with local operators and experienced handlers.</p>
+
+                    <div class="row-meta">
+                        <span class="tag">Elevation varies</span>
+                        <span class="tag">2–4 hours</span>
+                        <span class="tag">Beginner options by arrangement</span>
+                    </div>
+                </div>
+
+                <div class="row-action">
+                    <a class="button" href="contact.html#enquiry">Enquire</a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="info-block">
+            <h2>Trip packages</h2>
+
+            <div class="trip-grid">
+
+                <article>
+                    <span class="tag">Day trip</span>
+                    <h3>Maseru and nearby heritage</h3>
+                    <p>A flexible day around a selected cultural site. Transport and guide availability must be confirmed.</p>
+                </article>
+
+                <article>
+                    <span class="tag">Long weekend</span>
+                    <h3>Culture and highland views</h3>
+                    <p>Pair a heritage visit with a mountain stay, subject to road and weather conditions.</p>
+                </article>
+
+                <article>
+                    <span class="tag">One week</span>
+                    <h3>Ride, walk and explore</h3>
+                    <p>A tailor-made route with riding or hiking days and rest time between longer journeys.</p>
+                </article>
+
+            </div>
+        </div>
+
+        <p class="notice">No fixed prices are shown because costs depend on transport, guide availability, group size and seasonal access. Ask for a written quote with inclusions and exclusions.</p>
+
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container cta-content">
+        <div>
+            <h2>Your next view is waiting.</h2>
+            <p>Tell us what kind of highland day you have in mind.</p>
+        </div>
+
+        <a class="button" href="contact.html#enquiry">Plan a trip</a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+
+            <div>
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Molieleng Travel and Tours" class="footer-logo">
+                </a>
+                <p>Mountain roads, local stories and thoughtful trips through Lesotho.</p>
+            </div>
+
+            <div>
+                <strong>Explore</strong>
+                <div class="footer-links">
+                    <a href="destinations.html">Destinations by altitude</a>
+                    <a href="about.html">Our approach</a>
+                    <a href="gallery.html">Photo journal</a>
+                </div>
+            </div>
+
+            <div>
+                <strong>Plan well</strong>
+                <div class="footer-links">
+                    <a href="contact.html">Enquiries and practical help</a>
+                    <a href="contact.html#faq">Travel questions</a>
+                    <a href="contact.html#enquiry">Build a trip request</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Molieleng Travel & Tours. Demonstration website concept. Replace sample details with verified business information before publishing.
+        </div>
+    </div>
+</footer>
+
+<script>
+const filterButtons = document.querySelectorAll(".filter-btn");
+const destinations = document.querySelectorAll(".destination-row");
+
+filterButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        const category = button.getAttribute("data-filter");
+
+        filterButtons.forEach(function(item) {
+            item.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        destinations.forEach(function(destination) {
+            const categories = destination.getAttribute("data-category").split(" ");
+
+            if (category === "all" || categories.includes(category)) {
+                destination.classList.remove("hidden");
+            } else {
+                destination.classList.add("hidden");
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

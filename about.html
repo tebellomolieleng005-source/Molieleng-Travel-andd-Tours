@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Learn about Molieleng Travel and Tours and our approach to exploring Lesotho.">
+<title>About | Molieleng Travel & Tours</title>
+
+<style type="text/css">
+
+body{
+  margin:0;
+  padding:0;
+  font-family:Arial,sans-serif;
+  background-color:ghostwhite;
+  color:darkslategray;
+}
+
+.header{
+  background-color:midnightblue;
+  color:white;
+  width:90%;
+  margin:20px auto;
+  border-radius:15px;
+  padding:15px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  width:70px;
+  height:70px;
+}
+
+.header h1{
+  color:wheat;
+  font-size:24px;
+  text-align:center;
+  flex-grow:1;
+}
+
+nav{
+  text-align:right;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  background-color:teal;
+  padding:8px;
+  border-radius:5px;
+  margin:3px;
+  display:inline-block;
+}
+
+nav a:hover{
+  background-color:goldenrod;
+  color:midnightblue;
+}
+
+.hero{
+  background-color:midnightblue;
+  color:white;
+  padding:60px 8%;
+  min-height:250px;
+  box-sizing:border-box;
+}
+
+.hero h2{
+  font-size:45px;
+  margin:15px 0;
+}
+
+.hero p{
+  max-width:750px;
+  line-height:1.8;
+}
+
+.section{
+  padding:45px 5%;
+  overflow:hidden;
+}
+
+.section h2{
+  color:midnightblue;
+  font-size:30px;
+}
+
+.heading{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.tag{
+  color:teal;
+  font-weight:bold;
+}
+
+.split{
+  display:flex;
+  align-items:center;
+  gap:35px;
+  padding:20px 0;
+}
+
+.split img{
+  width:48%;
+  max-height:350px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.split-text{
+  flex:1;
+  line-height:1.8;
+}
+
+.notice{
+  background-color:lemonchiffon;
+  padding:15px;
+  border-left:5px solid goldenrod;
+  line-height:1.6;
+}
+
+.promise{
+  width:30%;
+  margin:1.5%;
+  float:left;
+  text-align:center;
+  box-sizing:border-box;
+  padding:20px;
+  background-color:white;
+  border-radius:12px;
+  box-shadow:0 5px 15px lightgray;
+}
+
+.number{
+  font-size:35px;
+  color:goldenrod;
+  font-weight:bold;
+}
+
+.one,
+.two,
+.three{
+  background-color:white;
+  width:30%;
+  min-height:390px;
+  margin:1.5%;
+  float:left;
+  text-align:center;
+  border-radius:12px;
+  box-shadow:0 5px 15px lightgray;
+  box-sizing:border-box;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.one:hover,
+.two:hover,
+.three:hover{
+  transform:translateY(-5px);
+}
+
+.one img,
+.two img,
+.three img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:18px;
+}
+
+.card-body h3{
+  color:teal;
+}
+
+.card-body p{
+  line-height:1.6;
+}
+
+.btn{
+  display:inline-block;
+  background-color:goldenrod;
+  color:midnightblue;
+  text-decoration:none;
+  padding:12px 18px;
+  margin:10px 5px 10px 0;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background-color:teal;
+  color:white;
+}
+
+.section-soft{
+  background-color:aliceblue;
+}
+
+.cta{
+  background-color:teal;
+  color:white;
+  padding:35px 8%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.cta h2{
+  color:white;
+}
+
+.footer{
+  background-color:midnightblue;
+  color:white;
+  padding:30px 5%;
+  text-align:center;
+  line-height:1.8;
+  clear:both;
+}
+
+.footer img{
+  width:65px;
+  height:65px;
+}
+
+.footer a{
+  color:wheat;
+  text-decoration:none;
+  margin:8px;
+}
+
+.footer a:hover{
+  text-decoration:underline;
+}
+
+@media screen and (max-width:1000px){
+
+  .header{
+    width:94%;
+    flex-wrap:wrap;
+  }
+
+  .header h1{
+    font-size:21px;
+  }
+
+  nav{
+    width:100%;
+    text-align:center;
+  }
+
+  .one,
+  .two,
+  .three{
+    width:46%;
+    margin:2%;
+  }
+
+  .hero h2{
+    font-size:40px;
+  }
+
+}
+
+@media screen and (max-width:768px){
+
+  .header{
+    flex-direction:column;
+    width:92%;
+    padding:12px;
+  }
+
+  .logo{
+    width:60px;
+    height:60px;
+  }
+
+  .header h1{
+    font-size:22px;
+    margin:8px;
+  }
+
+  nav{
+    text-align:center;
+  }
+
+  nav a{
+    margin:4px;
+    padding:8px;
+  }
+
+  .hero{
+    padding:40px 7%;
+  }
+
+  .hero h2{
+    font-size:35px;
+  }
+
+  .split{
+    flex-direction:column;
+  }
+
+  .split img{
+    width:100%;
+    max-height:300px;
+  }
+
+  .split-text{
+    width:100%;
+  }
+
+  .promise{
+    float:none;
+    width:90%;
+    margin:20px auto;
+  }
+
+  .one,
+  .two,
+  .three{
+    float:none;
+    display:block;
+    width:90%;
+    min-height:0;
+    margin:20px auto;
+  }
+
+  .one img,
+  .two img,
+  .three img{
+    height:230px;
+  }
+
+  .cta{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
+
+@media screen and (max-width:480px){
+
+  .header{
+    width:94%;
+    margin:10px auto;
+    border-radius:10px;
+    padding:10px;
+  }
+
+  .header h1{
+    font-size:19px;
+  }
+
+  nav a{
+    font-size:12px;
+    padding:7px;
+    margin:2px;
+  }
+
+  .hero{
+    padding:35px 6%;
+  }
+
+  .hero h2{
+    font-size:30px;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+
+  .section{
+    padding:30px 4%;
+  }
+
+  .section h2{
+    font-size:25px;
+  }
+
+  .one,
+  .two,
+  .three{
+    width:94%;
+    margin:18px auto;
+  }
+
+  .one img,
+  .two img,
+  .three img{
+    height:190px;
+  }
+
+  .card-body p{
+    font-size:14px;
+  }
+
+  .promise{
+    width:94%;
+    margin:15px auto;
+  }
+
+  .btn{
+    font-size:13px;
+    padding:10px 12px;
+  }
+
+  .footer{
+    font-size:13px;
+    padding:25px 10px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+<a href="index.html">
+<img src="images/logo.svg" class="logo" alt="Molieleng Travel and Tours">
+</a>
+
+<h1>MOLIELENG TRAVEL & TOURS</h1>
+
+<nav>
+<a href="index.html">HOME</a>
+<a href="destinations.html">DESTINATIONS</a>
+<a href="about.html">ABOUT</a>
+<a href="gallery.html">GALLERY</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+
+</div>
+
+<div class="hero">
+
+<p style="color:wheat"><b>MOLIELENG / ABOUT</b></p>
+
+<h2>Travel That Starts<br>with Listening.</h2>
+
+<p>Molieleng Travel & Tours is imagined as a locally rooted way to discover Lesotho: through its landscapes, its people and the stories that make each place more than a view.</p>
+
+</div>
+
+<div class="section">
+
+<div class="split">
+
+<img src="images/basotho-culture.jpg" alt="Basotho traditional dress and cultural heritage">
+
+<div class="split-text">
+
+<p class="tag">OUR REASON FOR BEING</p>
+
+<h2>Show the Place with Care.</h2>
+
+<p>We believe a good trip should leave visitors with more than photographs. It should offer context, respect local life and make space for the people who know the land best.</p>
+
+<p><b>About the name:</b> “Molieleng” is presented here as the brand name. Its exact meaning and family or community story should be confirmed by the business owner before publication rather than guessed on a website.</p>
+
+<div class="notice">
+
+This is a brand concept, not a claim that a registered tour operator or named team already exists.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section section-soft">
+
+<div class="heading">
+
+<p class="tag">HOW WE TRAVEL</p>
+
+<h2>Simple Values. Real Practice.</h2>
+
+<p>These are the standards the business should be able to demonstrate before advertising trips.</p>
+
+</div>
+
+<div class="promise">
+
+<div class="number">01</div>
+
+<h3>Small Groups</h3>
+
+<p>Choose group sizes that allow guides to communicate clearly and keep the experience personal.</p>
+
+</div>
+
+<div class="promise">
+
+<div class="number">02</div>
+
+<h3>Fair Local Partnerships</h3>
+
+<p>Agree on fair pay and clear expectations with local hosts, guides and service providers.</p>
+
+</div>
+
+<div class="promise">
+
+<div class="number">03</div>
+
+<h3>Respect the Highlands</h3>
+
+<p>Respect villages, ask before photographing people, care for animals and leave natural places as found.</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="heading">
+
+<p class="tag">PEOPLE MAKE THE PLACE</p>
+
+<h2>Meet the Local Team.</h2>
+
+<p>Add the real guide names, home villages, skills and photographs here after getting their permission.</p>
+
+</div>
+
+<div class="one">
+
+<img src="images/pony-trekking.jpg" alt="Pony trekking landscape">
+
+<div class="card-body">
+
+<p class="tag">GUIDE PROFILE PLACEHOLDER</p>
+
+<h3>Mountain Routes</h3>
+
+<p>Guide name and village to be confirmed. This profile should explain route experience, language and safety training.</p>
+
+</div>
+
+</div>
+
+<div class="two">
+
+<img src="images/ha-kome.jpg" alt="Ha Kome cave houses">
+
+<div class="card-body">
+
+<p class="tag">GUIDE PROFILE PLACEHOLDER</p>
+
+<h3>Culture and History</h3>
+
+<p>Guide name and village to be confirmed. Share the places and stories they know best.</p>
+
+</div>
+
+</div>
+
+<div class="three">
+
+<img src="images/mountain-trail.jpg" alt="Lesotho mountain trail">
+
+<div class="card-body">
+
+<p class="tag">GUIDE PROFILE PLACEHOLDER</p>
+
+<h3>Nature and Hiking</h3>
+
+<p>Guide name and village to be confirmed. List first aid and mountain-safety qualifications only when verified.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section section-soft">
+
+<div class="split">
+
+<div class="split-text">
+
+<p class="tag">TRUST SHOULD BE VISIBLE</p>
+
+<h2>Clear Information, No Guesswork.</h2>
+
+<p>Before taking bookings, publish the operator’s verified registration or licence details where applicable, insurance information, emergency procedures, guide qualifications, and a real way to reach the team.</p>
+
+<p>Guest reviews should be genuine and used with permission. No invented testimonials are included in this concept.</p>
+
+<a href="destinations.html" class="btn">SEE OUR DESTINATIONS</a>
+
+</div>
+
+<img src="images/mountain-trail.jpg" alt="High mountain landscape in Lesotho">
+
+</div>
+
+</div>
+
+<div class="cta">
+
+<div>
+
+<h2>Your Next View Is Waiting.</h2>
+
+<p>Tell us what kind of highland day you have in mind.</p>
+
+</div>
+
+<a href="contact.html#enquiry" class="btn">PLAN A TRIP</a>
+
+</div>
+
+<footer class="footer">
+
+<a href="index.html">
+<img src="images/logo.svg" alt="Molieleng Travel and Tours">
+</a>
+
+<p>Mountain roads, local stories and thoughtful trips through Lesotho.</p>
+
+<p>
+<a href="destinations.html">DESTINATIONS</a>
+<a href="about.html">ABOUT US</a>
+<a href="gallery.html">GALLERY</a>
+<a href="contact.html">CONTACT</a>
+</p>
+
+<p>© 2026 Molieleng Travel & Tours</p>
+
+<p>Demonstration website concept. Replace sample details with verified business information before publishing.</p>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

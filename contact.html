@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Contact Molieleng Travel and Tours to plan your Lesotho trip.">
+<title>Contact | Molieleng Travel & Tours</title>
+
+<style type="text/css">
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: ghostwhite;
+    color: darkslategray;
+    line-height: 1.6;
+}
+
+header {
+    background-color: midnightblue;
+    color: white;
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    width: 65px;
+    height: auto;
+}
+
+header h2 {
+    color: wheat;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+nav a:hover,
+nav .active {
+    color: gold;
+}
+
+nav .button {
+    background-color: teal;
+    border-radius: 5px;
+}
+
+.altitude {
+    background-color: goldenrod;
+    color: midnightblue;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero {
+    background-color: midnightblue;
+    color: white;
+    padding: 65px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero p {
+    max-width: 650px;
+}
+
+.breadcrumb {
+    color: wheat;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.section {
+    padding: 45px 20px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+}
+
+.eyebrow {
+    color: teal;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-options {
+    display: grid;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.contact-option {
+    display: block;
+    background-color: white;
+    padding: 18px;
+    border-left: 5px solid teal;
+    color: darkslategray;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-option strong {
+    display: block;
+    color: midnightblue;
+    font-size: 18px;
+}
+
+.contact-option span {
+    display: block;
+}
+
+.contact-option:hover {
+    background-color: aliceblue;
+}
+
+.map-card {
+    background-color: lemonchiffon;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid goldenrod;
+}
+
+.notice {
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px lightgray;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+    color: darkslategray;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid teal;
+    border-color: teal;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+.button {
+    display: inline-block;
+    background-color: teal;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: midnightblue;
+}
+
+.form-note {
+    font-size: 13px;
+    color: dimgray;
+}
+
+.form-status {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.section-soft {
+    background-color: aliceblue;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-heading p {
+    max-width: 450px;
+}
+
+.faq-list details {
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border-left: 4px solid goldenrod;
+}
+
+.faq-list summary {
+    color: midnightblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-list p {
+    margin-bottom: 0;
+}
+
+.cta {
+    background-color: teal;
+    color: white;
+    padding: 35px 20px;
+}
+
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cta h2 {
+    margin-top: 0;
+}
+
+.cta .button {
+    background-color: midnightblue;
+    white-space: nowrap;
+}
+
+footer {
+    background-color: midnightblue;
+    color: white;
+    padding: 35px 20px 15px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-logo {
+    width: 75px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: wheat;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-links a:hover {
+    color: gold;
+}
+
+.copyright {
+    border-top: 1px solid slategray;
+    margin-top: 25px;
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 750px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .section-heading,
+    .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full {
+        grid-column: auto;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 6px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <a href="index.html">
+            <img src="images/logo.svg" alt="Molieleng Travel and Tours" class="logo">
+        </a>
+
+        <h2>Molieleng Travel & Tours</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="#enquiry" class="button">Plan a trip</a>
+        </nav>
+    </div>
+</header>
+
+<div class="altitude">
+    EVERYWHERE HERE IS UPHILL
+</div>
+
+<main>
+
+<section class="hero">
+    <div class="container">
+        <p class="breadcrumb">Molieleng / Contact</p>
+        <h1>Let's plan your<br>way uphill.</h1>
+        <p>Tell us the places you have in mind, the dates you are considering and how many people are travelling. A clear enquiry is the first step towards a realistic plan.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container contact-grid">
+
+        <div>
+            <p class="eyebrow">Quick ways to reach us</p>
+            <h2>A simple question is welcome.</h2>
+
+            <div class="contact-options">
+                <a href="#enquiry" class="contact-option">
+                    <strong>WhatsApp</strong>
+                    <span>Add the real business WhatsApp number before launch.</span>
+                </a>
+
+                <a href="#enquiry" class="contact-option">
+                    <strong>Phone</strong>
+                    <span>Add a verified contact number before launch.</span>
+                </a>
+
+                <a href="#enquiry" class="contact-option">
+                    <strong>Email</strong>
+                    <span>Add the monitored business email before launch.</span>
+                </a>
+            </div>
+
+            <div class="info-block">
+                <h2>Where to find us</h2>
+
+                <div class="map-card">
+                    <strong>Maseru, Lesotho</strong>
+                    <p>Office address and map to be added once verified.</p>
+                </div>
+
+                <p class="notice">Office hours and reply-time promises should only be published when the team can reliably maintain them.</p>
+            </div>
+        </div>
+
+        <div class="form-card" id="enquiry">
+            <p class="eyebrow">Trip enquiry</p>
+            <h2>What are you dreaming of?</h2>
+
+            <form id="enquiryForm">
+                <div class="form-grid">
+
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" required minlength="2" placeholder="Full name">
+                    </div>
+
+                    <div class="field">
+                        <label for="contact">Phone or email</label>
+                        <input type="text" id="contact" name="contact" required placeholder="How can we reach you?">
+                    </div>
+
+                    <div class="field">
+                        <label for="trip">Trip of interest</label>
+                        <select id="trip" name="trip" required>
+                            <option value="">Choose a trip</option>
+                            <option>Ha Kome Cave Houses</option>
+                            <option>Thaba-Bosiu</option>
+                            <option>Highland Trails</option>
+                            <option>Pony trekking</option>
+                            <option>Custom package</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="people">Number of people</label>
+                        <select id="people" name="people" required>
+                            <option value="">Choose group size</option>
+                            <option>1 person</option>
+                            <option>2 people</option>
+                            <option>3–5 people</option>
+                            <option>6–10 people</option>
+                            <option>More than 10</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="date">Preferred date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="field">
+                        <label for="flexibility">Date flexibility</label>
+                        <select id="flexibility" name="flexibility">
+                            <option>Flexible</option>
+                            <option>Fixed dates</option>
+                            <option>Not sure yet</option>
+                        </select>
+                    </div>
+
+                    <div class="field full">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Tell us what you would like to experience."></textarea>
+                    </div>
+
+                    <div class="field full">
+                        <button type="submit" class="button">Check my enquiry</button>
+                        <p class="form-note">Demo form only. Your entries are checked in the browser but are not sent or stored.</p>
+                        <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<section class="section section-soft" id="faq">
+    <div class="container">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Practical help</p>
+                <h2>Before you set off.</h2>
+            </div>
+
+            <p>Conditions vary by route and season. Confirm details for your own trip before making travel arrangements.</p>
+        </div>
+
+        <div class="faq-list">
+
+            <details>
+                <summary>When is the best time to visit?</summary>
+                <p>It depends on the experience. Warmer months can suit many walks, while winter can bring snow, ice and severe conditions in high areas. Ask about the specific route and current forecast.</p>
+            </details>
+
+            <details>
+                <summary>What should I pack?</summary>
+                <p>Bring layered clothing, a waterproof outer layer, sturdy footwear, water and sun protection. A guide may recommend extra equipment for demanding routes.</p>
+            </details>
+
+            <details>
+                <summary>Are mountain trips safe in every weather?</summary>
+                <p>No route is safe in every condition. Trips may need to change, shorten or be postponed because of snow, storms, road conditions or poor visibility. Ask about the safety plan and turnaround rules.</p>
+            </details>
+
+            <details>
+                <summary>Do I need a visa?</summary>
+                <p>Entry requirements depend on your nationality, passport and travel plans. Check current official immigration guidance before travelling.</p>
+            </details>
+
+            <details>
+                <summary>How do payment and cancellations work?</summary>
+                <p>Request written terms before paying, including the deposit, balance due date, cancellation and refund policy, and what happens if weather or road conditions make a trip impossible.</p>
+            </details>
+
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container cta-content">
+        <div>
+            <h2>Your next view is waiting.</h2>
+            <p>Tell us what kind of highland day you have in mind.</p>
+        </div>
+
+        <a href="#enquiry" class="button">Plan a trip</a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+
+            <div>
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Molieleng Travel and Tours" class="footer-logo">
+                </a>
+                <p>Mountain roads, local stories and thoughtful trips through Lesotho.</p>
+            </div>
+
+            <div>
+                <strong>Explore</strong>
+                <div class="footer-links">
+                    <a href="destinations.html">Destinations by altitude</a>
+                    <a href="about.html">Our approach</a>
+                    <a href="gallery.html">Photo journal</a>
+                </div>
+            </div>
+
+            <div>
+                <strong>Plan well</strong>
+                <div class="footer-links">
+                    <a href="contact.html">Enquiries and practical help</a>
+                    <a href="#faq">Travel questions</a>
+                    <a href="#enquiry">Build a trip request</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Molieleng Travel & Tours. Demonstration website concept. Replace sample details with verified business information before publishing.
+        </div>
+    </div>
+</footer>
+
+<script>
+document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("formStatus").textContent =
+        "Your enquiry is valid. This demo form does not send your details.";
+});
+</script>
+
+</body>
+</html>

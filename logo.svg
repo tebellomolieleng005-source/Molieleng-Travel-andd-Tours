@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="110" viewBox="0 0 460 110">
+<rect width="460" height="110" rx="12" fill="#102f55"/>
+<path d="M20 77 L58 30 L80 56 L100 38 L130 77" fill="none" stroke="#d7b45c" stroke-width="5" stroke-linejoin="round"/>
+<path d="M29 77 L58 47 L76 67 L100 48 L120 77" fill="none" stroke="#ffffff" stroke-width="2" opacity=".85"/>
+<text x="150" y="52" font-family="Georgia,serif" font-size="30" font-weight="bold" fill="#ffffff" letter-spacing="1">MOLIELENG</text>
+<text x="151" y="78" font-family="Arial,sans-serif" font-size="13" fill="#d7b45c" letter-spacing="4">TRAVEL &amp; TOURS</text>
+</svg>

@@ -1,0 +1,739 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore Lesotho with Molieleng Travel and Tours.">
+<title>Home | Molieleng Travel & Tours</title>
+
+<style type="text/css">
+
+body{
+  margin:0;
+  padding:0;
+  font-family:Arial,sans-serif;
+  background-color:ghostwhite;
+  color:darkslategray;
+}
+
+.header{
+  background-color:midnightblue;
+  color:white;
+  width:90%;
+  margin:20px auto;
+  border-radius:15px;
+  padding:15px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  width:70px;
+  height:70px;
+}
+
+.header h1{
+  color:wheat;
+  font-size:24px;
+  text-align:center;
+  flex-grow:1;
+}
+
+nav{
+  text-align:right;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  background-color:teal;
+  padding:8px;
+  border-radius:5px;
+  margin:3px;
+  display:inline-block;
+}
+
+nav a:hover{
+  background-color:goldenrod;
+  color:midnightblue;
+}
+
+.hero{
+  background-color:midnightblue;
+  color:white;
+  padding:70px 8%;
+  min-height:300px;
+  box-sizing:border-box;
+}
+
+.hero h2{
+  font-size:48px;
+  margin:15px 0;
+}
+
+.hero em{
+  color:wheat;
+}
+
+.hero p{
+  max-width:650px;
+  line-height:1.7;
+}
+
+.btn{
+  display:inline-block;
+  background-color:goldenrod;
+  color:midnightblue;
+  text-decoration:none;
+  padding:12px 18px;
+  margin:10px 5px 10px 0;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background-color:white;
+}
+
+.section{
+  padding:45px 5%;
+  overflow:hidden;
+}
+
+.section h2{
+  color:midnightblue;
+  font-size:30px;
+}
+
+.heading{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.one,
+.two,
+.three{
+  background-color:white;
+  width:30%;
+  min-height:420px;
+  margin:1.5%;
+  float:left;
+  text-align:center;
+  border-radius:12px;
+  box-shadow:0 5px 15px lightgray;
+  box-sizing:border-box;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.one:hover,
+.two:hover,
+.three:hover{
+  transform:translateY(-5px);
+}
+
+.one img,
+.two img,
+.three img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:18px;
+}
+
+.card-body h3{
+  color:teal;
+}
+
+.card-body p{
+  line-height:1.6;
+}
+
+.tag{
+  color:teal;
+  font-weight:bold;
+}
+
+.altitude{
+  color:darkgoldenrod;
+  font-weight:bold;
+}
+
+.promise{
+  width:30%;
+  margin:1.5%;
+  float:left;
+  text-align:center;
+  box-sizing:border-box;
+  padding:20px;
+}
+
+.number{
+  font-size:35px;
+  color:goldenrod;
+  font-weight:bold;
+}
+
+.split{
+  display:flex;
+  align-items:center;
+  gap:35px;
+  padding:25px 0;
+}
+
+.split img{
+  width:48%;
+  max-height:350px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.split-text{
+  flex:1;
+  line-height:1.8;
+}
+
+.notice{
+  background-color:lemonchiffon;
+  padding:15px;
+  border-left:5px solid goldenrod;
+  line-height:1.6;
+}
+
+.route-builder{
+  flex:1;
+  background-color:aliceblue;
+  padding:25px;
+  border-radius:12px;
+  box-sizing:border-box;
+}
+
+.route-chip{
+  background-color:teal;
+  color:white;
+  padding:10px;
+  border:0;
+  border-radius:5px;
+  margin:5px;
+  cursor:pointer;
+}
+
+.route-chip:hover,
+.route-chip[aria-pressed="true"]{
+  background-color:goldenrod;
+  color:midnightblue;
+}
+
+.route-result{
+  font-weight:bold;
+  line-height:1.7;
+}
+
+.cta{
+  background-color:teal;
+  color:white;
+  padding:35px 8%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.cta h2{
+  color:white;
+}
+
+.footer{
+  background-color:midnightblue;
+  color:white;
+  padding:30px 5%;
+  text-align:center;
+  line-height:1.8;
+  clear:both;
+}
+
+.footer img{
+  width:65px;
+  height:65px;
+}
+
+.footer a{
+  color:wheat;
+  text-decoration:none;
+  margin:8px;
+}
+
+.footer a:hover{
+  text-decoration:underline;
+}
+
+@media screen and (max-width:1000px){
+
+  .header{
+    width:94%;
+    flex-wrap:wrap;
+  }
+
+  .header h1{
+    font-size:21px;
+  }
+
+  nav{
+    width:100%;
+    text-align:center;
+  }
+
+  .one,
+  .two,
+  .three{
+    width:46%;
+    margin:2%;
+  }
+
+  .promise{
+    width:30%;
+    margin:1.5%;
+  }
+
+  .hero h2{
+    font-size:40px;
+  }
+
+}
+
+@media screen and (max-width:768px){
+
+  .header{
+    flex-direction:column;
+    width:92%;
+    padding:12px;
+  }
+
+  .logo{
+    width:60px;
+    height:60px;
+  }
+
+  .header h1{
+    font-size:22px;
+    margin:8px;
+  }
+
+  nav{
+    text-align:center;
+  }
+
+  nav a{
+    margin:4px;
+    padding:8px;
+  }
+
+  .hero{
+    padding:45px 7%;
+  }
+
+  .hero h2{
+    font-size:35px;
+  }
+
+  .one,
+  .two,
+  .three{
+    float:none;
+    display:block;
+    width:90%;
+    min-height:0;
+    margin:20px auto;
+  }
+
+  .one img,
+  .two img,
+  .three img{
+    height:230px;
+  }
+
+  .promise{
+    float:none;
+    width:90%;
+    margin:20px auto;
+  }
+
+  .split{
+    flex-direction:column;
+  }
+
+  .split img{
+    width:100%;
+    max-height:300px;
+  }
+
+  .split-text,
+  .route-builder{
+    width:100%;
+  }
+
+  .cta{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
+
+@media screen and (max-width:480px){
+
+  .header{
+    width:94%;
+    margin:10px auto;
+    border-radius:10px;
+    padding:10px;
+  }
+
+  .header h1{
+    font-size:19px;
+  }
+
+  nav a{
+    font-size:12px;
+    padding:7px;
+    margin:2px;
+  }
+
+  .hero{
+    padding:35px 6%;
+  }
+
+  .hero h2{
+    font-size:30px;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+
+  .section{
+    padding:30px 4%;
+  }
+
+  .section h2{
+    font-size:25px;
+  }
+
+  .one,
+  .two,
+  .three{
+    width:94%;
+    margin:18px auto;
+  }
+
+  .one img,
+  .two img,
+  .three img{
+    height:190px;
+  }
+
+  .card-body p{
+    font-size:14px;
+  }
+
+  .promise{
+    width:94%;
+    margin:15px auto;
+  }
+
+  .btn{
+    font-size:13px;
+    padding:10px 12px;
+  }
+
+  .route-builder{
+    padding:15px;
+  }
+
+  .route-chip{
+    font-size:12px;
+    padding:8px;
+  }
+
+  .footer{
+    font-size:13px;
+    padding:25px 10px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+<a href="index.html">
+<img src="images/logo.svg" class="logo" alt="Molieleng Travel and Tours">
+</a>
+
+<h1>MOLIELENG TRAVEL & TOURS</h1>
+
+<nav>
+<a href="index.html">HOME</a>
+<a href="destinations.html">DESTINATIONS</a>
+<a href="about.html">ABOUT</a>
+<a href="gallery.html">GALLERY</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+
+</div>
+
+<div class="hero">
+
+<p style="color:wheat"><b>LESOTHO - THE KINGDOM IN THE SKY</b></p>
+
+<h2>Everywhere here<br>is <em>uphill.</em></h2>
+
+<p>A country of high passes, wide skies and stories worth slowing down for. Come for the views; leave knowing a little more about the place.</p>
+
+<a href="destinations.html" class="btn">SEE THE TRIPS</a>
+<a href="contact.html#enquiry" class="btn">PLAN WITH US</a>
+
+<p>Lesotho is the only country in the world whose entire territory lies above 1,000 metres.</p>
+
+</div>
+
+<div class="section">
+
+<div class="heading">
+<p class="tag">START HIGH</p>
+<h2>Choose Your Kind of Uphill</h2>
+<p>From living heritage to big mountain days, discover places that suit your pace.</p>
+</div>
+
+<div class="one">
+
+<img src="images/ha-kome.jpg" alt="Traditional cave houses at Ha Kome">
+
+<div class="card-body">
+
+<p class="tag">CULTURE</p>
+<p class="altitude">1,800 METRES APPROX.</p>
+
+<h3>Ha Kome Cave Houses</h3>
+
+<p>Discover homes shaped into sandstone and the stories held by the valley.</p>
+
+<a href="ha-kome.html" class="btn">EXPLORE HA KOME</a>
+
+</div>
+</div>
+
+<div class="two">
+
+<img src="images/basotho-culture.jpg" alt="Basotho traditional clothing">
+
+<div class="card-body">
+
+<p class="tag">CULTURE</p>
+<p class="altitude">1,600 METRES APPROX.</p>
+
+<h3>Thaba-Bosiu</h3>
+
+<p>Walk through a place central to Basotho history and identity.</p>
+
+<a href="thaba-bosiu.html" class="btn">EXPLORE THABA-BOSIU</a>
+
+</div>
+</div>
+
+<div class="three">
+
+<img src="images/mountain-trail.jpg" alt="Mountain landscape and walking route">
+
+<div class="card-body">
+
+<p class="tag">HIKING</p>
+<p class="altitude">3,000+ METRES APPROX.</p>
+
+<h3>Highland Trails</h3>
+
+<p>Take on open ridgelines with time for weather checks and quiet views.</p>
+
+<a href="highland-trails.html" class="btn">EXPLORE THE TRAILS</a>
+
+</div>
+</div>
+
+<p style="text-align:center;clear:both;padding-top:25px">
+<a href="destinations.html" class="btn">VIEW ALL DESTINATIONS</a>
+</p>
+
+</div>
+
+<div class="section" style="background-color:aliceblue">
+
+<div class="heading">
+
+<p class="tag">WHY TRAVEL WITH US</p>
+
+<h2>Good Trips Start with Good People</h2>
+
+<p>We believe the best mountain day respects local people and the conditions on the ground.</p>
+
+</div>
+
+<div class="promise">
+
+<div class="number">01</div>
+
+<h3>Local Knowledge</h3>
+
+<p>Plan around local stories, route knowledge and advice from people who know the area.</p>
+
+</div>
+
+<div class="promise">
+
+<div class="number">02</div>
+
+<h3>Small-Group Thinking</h3>
+
+<p>Keep the experience personal and make room for questions, pauses and unexpected views.</p>
+
+</div>
+
+<div class="promise">
+
+<div class="number">03</div>
+
+<h3>Weather-Aware Plans</h3>
+
+<p>Mountain conditions change quickly. We build flexibility into planning rather than promising every route in every condition.</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="split">
+
+<img src="images/pony-trekking.jpg" alt="Pony trekking in the Lesotho highlands">
+
+<div class="split-text">
+
+<p class="tag">A DIFFERENT PACE</p>
+
+<h2>Follow the Trail, Not the Clock</h2>
+
+<p>Some days are for walking. Some are for meeting local hosts or learning about Basotho traditions. And some are for changing the plan because the clouds have arrived.</p>
+
+<div class="notice">
+
+The guides, guest reviews, licences, prices and contact details on this concept site are placeholders until the real business details are supplied. Always confirm route conditions and local arrangements before travelling.
+
+</div>
+
+<a href="about.html" class="btn">GET TO KNOW US</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section" style="background-color:whitesmoke">
+
+<div class="split">
+
+<div class="split-text">
+
+<p class="tag">MAKE A FIRST PLAN</p>
+
+<h2>Tell Us What You Want to See</h2>
+
+<p>Share a rough date, group size and the kind of experience you are after. You do not need to have every detail figured out yet.</p>
+
+<a href="contact.html#enquiry" class="btn">START AN ENQUIRY</a>
+
+</div>
+
+<div class="route-builder">
+
+<h2>Build a Draft Route</h2>
+
+<p>Tap the places you are curious about. This is a planning helper, not a confirmed booking.</p>
+
+<button class="route-chip" data-route="Ha Kome" aria-pressed="false">Ha Kome</button>
+
+<button class="route-chip" data-route="Thaba-Bosiu" aria-pressed="false">Thaba-Bosiu</button>
+
+<button class="route-chip" data-route="Highland Trails" aria-pressed="false">Highland Trails</button>
+
+<p class="route-result" id="routeResult" aria-live="polite">Choose destinations to build a draft route.</p>
+
+<a href="contact.html#enquiry" class="btn">ASK ABOUT THIS ROUTE</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="heading">
+
+<p class="tag">A SMALL GREETING</p>
+
+<h2>Lumela. Khotso.</h2>
+
+<p>Hello, and peace. We want every visitor to meet Lesotho with curiosity, respect and a little patience for the road ahead.</p>
+
+</div>
+
+</div>
+
+<div class="cta">
+
+<div>
+
+<h2>Your Next View Is Waiting</h2>
+
+<p>Tell us what kind of highland day you have in mind.</p>
+
+</div>
+
+<a href="contact.html#enquiry" class="btn">PLAN A TRIP</a>
+
+</div>
+
+<footer class="footer">
+
+<a href="index.html">
+<img src="images/logo.svg" alt="Molieleng Travel and Tours">
+</a>
+
+<p>Mountain roads, local stories and thoughtful trips through Lesotho.</p>
+
+<p>
+<a href="destinations.html">DESTINATIONS</a>
+<a href="about.html">ABOUT US</a>
+<a href="gallery.html">GALLERY</a>
+<a href="contact.html">CONTACT</a>
+</p>
+
+<p>© 2026 Molieleng Travel & Tours</p>
+
+<p>Demonstration website concept. Replace sample details with verified business information before publishing.</p>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
